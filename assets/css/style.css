@@ -3,7 +3,39 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
+
+/* Estilos para los botones de redes sociales */
+.redes-sociales {
+    background-color: #333;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: rgb(194, 171, 171);
+    text-decoration: none;
+}
+
+.icon-facebook::before {
+    content: "\f09a"; /* Código Unicode del icono de Facebook */
+    font-family: FontAwesome; /* Utiliza una fuente de iconos, como FontAwesome */
+}
+
+.icon-instagram::before {
+    content: "\f16d"; /* Código Unicode del icono de Instagram */
+    font-family: FontAwesome;
+}
+
+.icon-youtube::before {
+    content: "\f167"; /* Código Unicode del icono de YouTube */
+    font-family: FontAwesome;
+}
+
 
 /* Estilos del encabezado */
 header {
@@ -37,7 +69,7 @@ nav a {
 .hero {
     background-image: url('imagen-hero.jpg'); /* Agrega tu imagen de fondo aquí */
     background-size: cover;
-    color: white;
+    color: #177584;
     text-align: center;
     padding: 100px 0;
 }
@@ -86,4 +118,55 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Estilos para el carrusel de imágenes */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Estilos para los controles y los indicadores */
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+.dots-container {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ff6600; /* Color para el indicador activo */
 }

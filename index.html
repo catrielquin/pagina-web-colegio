@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela Publica Nº32</title>
+    <link rel="shortcut icon" href="images/Province.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- botones de redes sociales -->
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/TuColegio" target="_blank" class="icon-facebook"></a>
+        <a href="https://www.instagram.com/TuColegio" target="_blank" class="icon-instagram"></a>
+        <a href="https://www.youtube.com/TuColegio" target="_blank" class="icon-youtube"></a>
+    </div>
+
+    <!-- titulo -->
     <header>
         <h1>Escuela Publica Nº32</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="institucion.html">nuestra institución</a></li>
+                <li><a href="#">Historia</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Cursos</a></li>
                 <li><a href="#">Contacto</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -25,6 +38,32 @@
         <a href="#" class="cta-button">Conócenos</a>
     </section>
     
+<!-- Agregar el carrusel de imágenes -->
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="images/foto-col-1.jpg" alt="Imagen 1">
+    </div>
+    <div class="slide fade">
+        <img src="images/foto-col-2.jpg" alt="Imagen 2">
+    </div>
+    <div class="slide fade">
+        <img src="images/foto-col-3.jpg" alt="Imagen 3">
+    </div>
+</div>
+
+<!-- Agregar controles para el carrusel -->
+<div class="controls">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Agregar indicadores de las imágenes -->
+<div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
     <section class="noticias">
         <h2>Últimas Noticias</h2>
         <article>
@@ -42,5 +81,16 @@
     <footer>
         <p>&copy; 2023 Escuela Publica Nº32. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- botones de redes sociales -->
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/TuColegio" target="_blank" class="icon-facebook"></a>
+        <a href="https://www.instagram.com/TuColegio" target="_blank" class="icon-instagram"></a>
+        <a href="https://www.youtube.com/TuColegio" target="_blank" class="icon-youtube"></a>
+    </div>
+
+    <!-- script del carrusel -->
+    <script src="slideshow.js"></script>
+
 </body>
 </html>
